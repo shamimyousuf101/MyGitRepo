@@ -19,7 +19,10 @@
 			}
 
 			weather {
+				font-weight: bold;
 				padding: 20px;
+				font-size: 20px;
+				color: yellow;
 			}
 
 			footer {
@@ -28,6 +31,11 @@
 				padding: 10px;
 				text-align: center;
 				color: white;
+			}
+
+			legend {
+				font-style: 14px;
+
 			}
 
 
@@ -52,43 +60,43 @@
 
 	</head>
 
-	<body style="background-color:#CDD269">
+	<body background=kerala.jpg style = opacity:0.8>
 
 		<header> Welcome to NRI's Monitor</header>
 
-	<weather>
+		<weather>
 
-		<form>
+			<form>
 
-			<fieldset>
-				<legend>Weather in India</legend>
+				<fieldset>
+					<legend>Weather in India</legend>
 
-				<p> Select the city:</p>
+					<p> Select the city:</p>
 
-				<select id="city">
-				<option value = "Bangalore">Bangalore</option>
-				<option value = "Chennai">Chennai</option>
-				</select>
+					<select id="city">
+					<option value = "Bangalore">Bangalore</option>
+					<option value = "Chennai">Chennai</option>
+					</select>
 
-				<br><br>
+					<br><br>
 
-				
-				<button onclick="findTemperature()"> Find Temparature</button>
-				<div>
-				<p id="temp" ></p>
+					
+					<button onclick="findTemperature()"> Find Temparature</button>
+					<div>
+					<p id="temp" ></p>
 
-				</div>
+					</div>
 
-			</fieldset>
+				</fieldset>
 
-		</form>
+			</form>
 
-	</weather>
+		</weather>
 
 
-	<footer> 
-		<p> Hope you enjoy this Summer</p>
-	</footer>
+		<footer> 
+			<p> Hope you enjoy this Summer</p>
+		</footer>
 
 
 	</body>
