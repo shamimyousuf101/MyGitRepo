@@ -67,16 +67,25 @@
 
 	</head>
 
-	<body onload = "startTimer();findTemperature();">
+	<body onload = "startTimer();findTemperature()">
 
-		<header> 
+		<header id = "header"> 
 
 			<div id="title">
 				Welcome to NRI's Monitor
 			</div>
 			<canvas id="canvas" width="200" height="200">
 			</canvas>
-		
+
+			<p> Select Colour:</p>
+
+			<select id="color" onchange="changeBackground();return false" >
+			<option value = "#AAA039">Default</option>	
+			<option value = "#97D38D">Green</option>
+			<option value = "#8C7AAE">Blue</option>
+			<option value = "#FFFFAA">Yellow</option>
+			<option value = "#C0C0C0">Silver</option>
+			</select>
 
 		</header>
 
@@ -265,6 +274,11 @@
 			    ctx.rotate(-pos);
 			}
 
+
+			function changeBackground(color) {
+				var color = document.querySelector("#color").value;	
+			    document.body.style.background = color.split(",")[0];
+			}
 
 	</script>
 
