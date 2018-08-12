@@ -22,6 +22,10 @@
 
 			}
 
+			.flex-container {
+				display: flex;
+			}
+
 			#weather {
 				font-weight: bold;
 				padding: 20px;
@@ -46,15 +50,22 @@
 			    padding: 15px;
 			}
 
+			img {
+				width:600px;
+				height:500px;
+			}
+
 		</style>
 
 	</head>
 
-	<body>
+	<body onload = "startTimer();findTemperature();">
 
 		<header> Welcome to NRI's Monitor</header>
 
-			<form id="weather">
+		<div class="flex-container">
+
+			<div id="weather">
 
 				<fieldset>
 					<legend>Weather in India</legend>
@@ -64,7 +75,8 @@
 					<select id="city" onchange="findTemperature();return false" >
 					<option value = "Bangalore">Bangalore</option>
 					<option value = "Chennai">Chennai</option>
-					<option value = "London">London</option>
+					<option value = "Kochi">Kochi</option>
+					<option value = "Mumbai">Mumbai</option>
 					</select>
 					
 					<p id="result"></p>
@@ -92,7 +104,15 @@
 
 				</fieldset>
 
-			</form>		
+			</div>		
+
+
+			<div>
+				<img id="img" src="images1.jpg"/>
+			</div>
+
+		</div>
+      
 
 	</body>
 
@@ -122,6 +142,31 @@
 			document.querySelector("#caption").innerHTML = jsonText.query.results.channel.item.condition.date;				
 		
 			}
+
+
+
+			function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "images1.jpg";
+          images[1] = "images2.jpg";
+          images[2] = "images3.jpg";
+          images[3] = "images4.jpg";
+          images[4] = "images5.jpg";
+          images[5] = "images6.jpg";
+          images[6] = "images7.jpg";
 
 	</script>
 
