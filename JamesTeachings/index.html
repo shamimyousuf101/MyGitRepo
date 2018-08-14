@@ -8,23 +8,25 @@
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 
-	<body onload = "startTimer();findTemperature()">
-		<header id = "header"> 
-			<div id="title">
-				Welcome to NRI's Monitor
-			</div>
+
+	<header id = "header"> 
+		<div class="flex-container">
+			<select id="color" onchange="changeBackground();return false" >
+				<option value = "">Select Theme</option>	
+				<option value = "#E7DAA1, #AAA739,#6D4600">Green</option>	
+				<option value = "#B47EA0, #E19DA2,#852C64">Pink</option>
+				<option value = "#9FB9F6, #C0C0C0,#6C8196">Silver</option>
+			</select>
+
+			<div id="title"> Welcome to NRI's Monitor</div>
+
 			<canvas id="canvas"  width="150" height="150"></canvas>
 
-			<p> Select Background Color:</p>
+		</div>
+	</header>
 
-			<select id="color" onchange="changeBackground();return false" >
-				<option value = "#AAA039">Default</option>	
-				<option value = "#97D38D">Green</option>
-				<option value = "#8C7AAE">Blue</option>
-				<option value = "#FFFFAA">Yellow</option>
-				<option value = "#C0C0C0">Silver</option>
-			</select>
-		</header>
+	<body onload = "startTimer();findTemperature()">
+		
 
 		<div class="flex-container">
 			<div id="weather">
@@ -68,7 +70,7 @@
      
 	</body>
 
-	<footer> 
+	<footer id ="footer"> 
 		<p> Enjoy this Summer in your favourite places</p>
 		<marquee>Happy holidays... </marquee>
 	</footer>

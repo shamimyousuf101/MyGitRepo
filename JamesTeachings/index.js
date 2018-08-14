@@ -124,4 +124,7 @@ function drawHand(ctx, pos, length, width) {
 function changeBackground(color) {
 	var color = document.querySelector("#color").value;	
 	document.body.style.background = color.split(",")[0];
+	document.getElementById("header").style.backgroundColor = color.split(",")[1];
+	document.getElementById("footer").style.backgroundColor = color.split(",")[1];
+	document.getElementById("title").style.color = color.split(",")[2];
 }
