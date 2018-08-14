@@ -1,0 +1,53 @@
+header {
+	background-color: #9C344C;						
+}
+
+body {
+	background-color:#AAA039;
+}
+
+#title {
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	padding: 30px;	
+}
+
+#canvas {
+	position: absolute;
+	top:15px;
+	right:15px;
+	background-color:#C0C0C0;
+}
+
+.flex-container {
+	display: flex;
+}
+
+#weather {
+	font-weight: bold;
+	padding: 20px;
+	font-size: 20px;
+	color: #6F256F;
+}
+
+footer {
+	background-color: #9C344C;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+legend {
+	font-style: 14px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 15px;
+}
+
+img {
+	width:600px;
+	height:500px;
+}
