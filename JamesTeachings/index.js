@@ -93,6 +93,7 @@ function drawNumbers(ctx, radius) {
 
 function drawTime(ctx, radius){
 	var now = new Date();
+	console.log(now);
 	var hour = now.getHours();
 	var minute = now.getMinutes();
 	var second = now.getSeconds();

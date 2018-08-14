@@ -15,8 +15,8 @@ body {
 
 #canvas {
 	position: absolute;
-	top:15px;
-	right:15px;
+	top:8px;
+	right:8px;
 	background-color:#C0C0C0;
 }
 
@@ -56,4 +56,5 @@ select {
 	font-size: 14px;
 	color: #6F256F;
 	background-color:#C0C0C0;
+	height:30px;
 }
