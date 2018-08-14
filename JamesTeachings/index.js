@@ -39,7 +39,7 @@ images[2] = "images3.jpg";
 images[3] = "images4.jpg";
 images[4] = "images5.jpg";
 images[5] = "images6.jpg";
-images[6] = "images7.jpg";
+images[6] = "images7.png";
 
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
