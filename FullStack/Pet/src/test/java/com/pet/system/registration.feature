@@ -1,0 +1,2 @@
+Feature:
+  Scenario: Registration service
