@@ -1,15 +1,15 @@
 
+var jsonText = "";
 function findTemperature(){
 
 	var city = document.querySelector("#city").value;				
 	var URL = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text=" + "\"" + city + "\"" + ")&format=json";
-
 	var httpreq = new XMLHttpRequest();
 	httpreq.open("GET",URL,false);
 	httpreq.send();
 	console.log( httpreq.responseText);
 
-	var jsonText = JSON.parse(httpreq.responseText);
+	jsonText = JSON.parse(httpreq.responseText);
 	document.querySelector(".result").innerHTML = jsonText.query.results.channel.title;
 	document.querySelector("#sunrise").innerHTML = jsonText.query.results.channel.astronomy.sunrise;
 	document.querySelector("#sunset").innerHTML = jsonText.query.results.channel.astronomy.sunset;

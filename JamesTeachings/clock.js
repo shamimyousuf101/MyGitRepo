@@ -50,22 +50,29 @@ function drawNumbers(ctx, radius) {
 
 function drawTime(ctx, radius){
 	var now = new Date();
-	console.log(now);
-	var hour = now.getHours();
-	var minute = now.getMinutes();
-	var second = now.getSeconds();
+	var date = jsonText.query.results.channel.lastBuildDate;
+	var hr = date.split(" ")[4].split(":")[0];
+	var min = date.split(" ")[4].split(":")[1];
+	var AMPM = date.split(" ")[5];
+	var hours = Number(hr);
+	var minutes = Number(min);
+	if(AMPM == "PM" && hours<12) hours = hours+12;
+	if(AMPM == "AM" && hours==12) hours = hours-12;
+	var sHours = hours.toString();
+	var sMinutes = minutes.toString();
+	if(hours<10) sHours = "0" + sHours;
+	if(minutes<10) sMinutes = "0" + sMinutes;
+	var hour = sHours;
+	var minute = sMinutes;
 	//hour
 	hour=hour%12;
 	hour=(hour*Math.PI/6)+
-	(minute*Math.PI/(6*60))+
-	(second*Math.PI/(360*60));
+	(minute*Math.PI/(6*60));
 	drawHand(ctx, hour, radius*0.5, radius*0.07);
 	//minute
-	minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+	minute=(minute*Math.PI/30);
 	drawHand(ctx, minute, radius*0.8, radius*0.07);
 	// second
-	second=(second*Math.PI/30);
-	drawHand(ctx, second, radius*0.9, radius*0.02);
 }
 
 function drawHand(ctx, pos, length, width) {
