@@ -1,4 +1,4 @@
-header {
+header, footer{
 	background-color: #9C344C;						
 }
 
@@ -6,36 +6,10 @@ body {
 	background-color:#AAA039;
 }
 
-#title {
-	text-align: center;
-	font-size: 35px;
-	color: white;
-	padding: 30px;	
-}
-
-#canvas {
-	position: absolute;
-	top:8px;
-	right:8px;
-	background-color:#C0C0C0;
-}
-
-.flex-container {
-	display: flex;
-}
-
-#weather {
-	font-weight: bold;
-	padding: 20px;
-	font-size: 20px;
-	color: #6F256F;
-}
-
 footer {
-	background-color: #9C344C;
+	color: white;
 	padding: 10px;
 	text-align: center;
-	color: white;
 }
 
 legend {
@@ -48,13 +22,41 @@ table, th, td {
 }
 
 img {
-	width:600px;
 	height:500px;
+	width:600px;
 }
 
 select {
-	font-size: 14px;
-	color: #6F256F;
 	background-color:#C0C0C0;
+	color: #6F256F;
+	font-size: 14px;
 	height:30px;
 }
+
+canvas {
+	background-color:#C0C0C0;
+	position: absolute;
+	right:8px;
+	top:8px;
+}
+
+#title {
+	color: white;
+	font-size: 35px;
+	padding: 30px;	
+	text-align: center;
+}
+
+.flex-container {
+	display: flex;
+}
+
+#weather {
+	color: #6F256F;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px;	
+}
+
+
+

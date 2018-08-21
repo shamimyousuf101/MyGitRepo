@@ -1,48 +1,34 @@
 <!DOCTYPE html>
-
 <html>
-
 	<head>
 		<meta charset="UTF-8">
-		<title>NRI Monitor</title>		
+		<title>Non Resident Indian's Monitor</title>		
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
-
-
-	<header id = "header"> 
+	<header> 
 		<div class="flex-container">
-			<select id="color" onchange="changeBackground();return false" >
-				<option value = "">Select Theme</option>	
-				<option value = "#E7DAA1, #AAA739,#6D4600">Green</option>	
-				<option value = "#B47EA0, #E19DA2,#852C64">Pink</option>
-				<option value = "#9FB9F6, #C0C0C0,#6C8196">Silver</option>
+			<select id="color" onchange="changeBackground();return false" >				
+				<option data-color ="LimeAndGreen">LimeAndGreen</option>	
+				<option data-color ="PinkAndViolet">PinkAndViolet</option>	
+				<option data-color ="SilverAndBlue">SilverAndBlue</option>	
 			</select>
-
 			<div id="title"> Welcome to NRI's Monitor</div>
-
-			<canvas id="canvas"  width="95" height="95"></canvas>
-
+			<canvas width="95" height="95"></canvas>
 		</div>
 	</header>
-
 	<body onload = "startTimer();findTemperature()">
-		
-
 		<div class="flex-container">
 			<div id="weather">
 				<fieldset>
 					<legend>Weather in India</legend>
 					<p> Select the city:</p>
 					<select id="city" onchange="findTemperature();return false" >
-						<option value = "Bangalore">Bangalore</option>
-						<option value = "Chennai">Chennai</option>
-						<option value = "Kochi">Kochi</option>
-						<option value = "Mumbai">Mumbai</option>
-					</select>
-					
-					<p id="result"></p>
-					
-
+						<option value="Bangalore">Bangalore</option>
+						<option value="Chennai">Chennai</option>
+						<option value="Kochi">Kochi</option>
+						<option value="Mumbai">Mumbai</option>
+					</select>					
+					<p class="result"></p>
 					<table>			
 						 <caption id="caption"></caption>			
 						 <tr>
@@ -62,19 +48,16 @@
 					</table>									
 				</fieldset>
 			</div>		
-
 			<div>
 				<img id="img" src="images1.jpg"/>
 			</div>
-		</div>
-     
+		</div>   
 	</body>
-
-	<footer id ="footer"> 
+	<footer> 
 		<p> Enjoy this Summer in your favourite places</p>
 		<marquee>Happy holidays... </marquee>
 	</footer>
-
+	<script src="data.js"></script>
+	<script src="clock.js"></script>
 	<script src="index.js"></script>
-
 </html>
