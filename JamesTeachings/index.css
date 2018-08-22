@@ -34,10 +34,8 @@ select {
 }
 
 canvas {
-	background-color:#C0C0C0;
-	position: absolute;
-	right:8px;
-	top:8px;
+	position: relative;
+	left:25%;
 }
 
 #title {

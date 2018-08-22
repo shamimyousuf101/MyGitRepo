@@ -5,29 +5,30 @@
 		<title>Non Resident Indian's Monitor</title>		
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
-	<header> 
-		<div class="flex-container">
-			<select id="color" onchange="changeBackground();return false" >				
-				<option data-color ="LimeAndGreen">LimeAndGreen</option>	
-				<option data-color ="PinkAndViolet">PinkAndViolet</option>	
-				<option data-color ="SilverAndBlue">SilverAndBlue</option>	
-			</select>
-			<div id="title"> Welcome to NRI's Monitor</div>
-			<canvas width="95" height="95"></canvas>
-		</div>
-	</header>
 	<body onload = "startTimer();findTemperature()">
+		<header> 
+			<div class="flex-container">
+				<select id="color">		
+					<option value="LimeAndGreen">LimeAndGreen</option>	
+					<option value="PinkAndViolet">PinkAndViolet</option>	
+					<option value="SilverAndBlue">SilverAndBlue</option>	
+				</select>
+				<div id="title"> Welcome to NRI's Monitor</div>
+				
+			</div>
+		</header>
 		<div class="flex-container">
 			<div id="weather">
-				<fieldset>
+				<fieldset class="flex-container">
 					<legend>Weather in India</legend>
 					<p> Select the city:</p>
-					<select id="city" onchange="findTemperature();return false" >
+					<select id="city">
 						<option value="Bangalore">Bangalore</option>
 						<option value="Chennai">Chennai</option>
 						<option value="Kochi">Kochi</option>
 						<option value="Mumbai">Mumbai</option>
-					</select>					
+					</select>			
+					<canvas width="175" height="175"></canvas>		
 					<p class="result"></p>
 					<table>			
 						 <caption id="caption"></caption>			
@@ -52,12 +53,13 @@
 				<img id="img" src="images1.jpg"/>
 			</div>
 		</div>   
+		<footer> 
+			<p> Enjoy this Summer in your favourite places</p>
+			<marquee>Happy holidays... </marquee>
+		</footer>
+		<script src="data.js"></script>
+		<script src="index.js"></script>
+		<script src="clock.js"></script>
 	</body>
-	<footer> 
-		<p> Enjoy this Summer in your favourite places</p>
-		<marquee>Happy holidays... </marquee>
-	</footer>
-	<script src="data.js"></script>
-	<script src="index.js"></script>
-	<script src="clock.js"></script>
+	
 </html>

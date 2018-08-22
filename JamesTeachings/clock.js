@@ -49,7 +49,6 @@ function drawNumbers(ctx, radius) {
 }
 
 function drawTime(ctx, radius){
-	var now = new Date();
 	var date = jsonText.query.results.channel.lastBuildDate;
 	var hr = date.split(" ")[4].split(":")[0];
 	var min = date.split(" ")[4].split(":")[1];
@@ -72,7 +71,6 @@ function drawTime(ctx, radius){
 	//minute
 	minute=(minute*Math.PI/30);
 	drawHand(ctx, minute, radius*0.8, radius*0.07);
-	// second
 }
 
 function drawHand(ctx, pos, length, width) {
