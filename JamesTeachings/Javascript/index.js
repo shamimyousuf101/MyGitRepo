@@ -26,12 +26,12 @@ var x = -1;
 
 function displayNextImage() {
 	x = (x === imagesLengthMinusoOne) ? 0 : x + 1;
-	document.getElementById("img").src = images[x];
+	document.getElementById("img").src = "Images/" + images[x];
 }
 
 function displayPreviousImage() {
 	x = (x <= 0) ? imagesLengthMinusoOne : x - 1;
-	document.getElementById("img").src = images[x];
+	document.getElementById("img").src = "Images/" + images[x];
 }
 
 function startTimer() {
