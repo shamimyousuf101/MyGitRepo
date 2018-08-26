@@ -1,0 +1,141 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background: #333;
+}
+
+body{
+  padding: 10px;
+}
+
+h1{
+  text-align: center;
+  color: #f0f0f0;
+  margin-bottom: 1em;
+  flex:1;
+}
+
+button{
+  width: 30px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  outline: none;
+  opacity: 0.5;
+}
+
+.flexcontainer{
+  display: flex;
+  flex-flow:column;
+}
+
+.wrap{
+  display: flex;
+  flex:1;
+  width: 90%;
+  height: 550px;
+  margin: auto;
+}
+
+.coding{
+  display: flex;
+  flex:1;
+  margin: auto;
+  padding-top: 60px;
+  width: 85%;
+}
+
+@media all and (max-width: 900px) {
+  .coding {
+    flex-direction: column;
+  }
+}
+
+.runbutton{
+  width: 70px;
+  background: blue;
+  color: red;
+  font-size: 40px;
+  text-align: center;
+}
+
+.scroller{
+  background-color: #00bfff; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#00bfff, pink); /* Standard syntax (must be last) */
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  border-style: ridge;
+  border-color:red;
+}
+
+.items{
+  font-size: 0;
+  width: 100%;
+  line-height: 0;
+  height: 100%;
+}
+
+.item{
+  padding: 30px 20px;
+  width: 100%;
+  height: 600px;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: bold;
+  height: 100%;
+ }
+
+ /*======*/
+
+
+.csscoding{
+  background-color: black;
+  color: #FFF5CC;
+  width: 100%;
+  height: 600px;
+  display: block;
+  font-size: 18px;
+}
+
+.htmldisplay {
+  display: block;
+  flex-flow:row;
+  background-color: #F0FFF0;
+  height: 600px;
+  width: 100%;
+  border-style: dotted;
+}
+
+/*=========*/
+
+.container {
+  display: flex;
+}
+
+.box {
+  height:100px;
+  width:100px;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: yellow;
+}
+
+.box3 {
+  background-color: green;  
+}
+
+.box4 {
+  background-color: violet;  
+}

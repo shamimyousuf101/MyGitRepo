@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<link rel="stylesheet" type="text/css" href="simple.css">
+</head>
+<body>
+	<div class="flexcontainer">
+		<div><h1>Flex Layout Model</h1></div>
+		<div class="wrap">
+			<button onclick="plusSlides(-1)">&#10094;</button>
+			<div class="scroller" >
+				<ul class="items" >
+					<li class="item">
+						<h2>1. Introduction</h2>
+						Four layouts in css2 and this module introduces 5th one - flex layout
+						<ul style="padding:20px">
+							<li>block layout</li>
+							<li>inline layout</li>
+							<li>table layout</li>
+							<li>positioned layout</li>
+						</ul>
+					</li>
+					<li class="item">
+						<h2>Overview of Flex</h2>
+						The contents of a Flex container:
+						<ul style="padding:20px">
+							<li>can be layout in any flow direction</li>
+							<li>can have their display order reversed or reaaranged at the style layer</li>
+							<li>can be laid out linearly along a main axis or wrapped into multiple lines along a cross axis</li>
+							<li>can flex their sizes to respond to the available size</li>
+							<li>can be aligned with respect to their container or each other on the cross axis</li>
+							<li>can be dynamically collapsed or uncollapsed along the main axis while preserving the container's cross size</li>						
+						</ul>
+					</li>
+					<li class="item">
+						<h2>2. Flex Layout Model</h2>
+						<img src="flex-direction-terms.svg"></img>
+					</li>
+					<li class="item">
+						<h2>3. Flex Containers</h2>
+						<ul style="padding:20px">	
+							<li>flex</li>
+							<li>inline-flex</li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<h2>4. Flex Items</h2>
+						<ul style="padding:20px">
+							<li>Absolutely-Positioned Flex Children</li>
+							<li>Flex Item Margins and Paddings</li>
+							<li>Flex Item Z-Ordering</li>
+							<li>Collapsed Items</li>
+							<li>Automatic Minimum Size of Flex Items</li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<h2>5. Ordering and Orientation</h2>
+						<ul style="padding:20px">
+							<li>Flex Flow Direction: the flex-direction property</li>
+							<li>Flex Line Wrapping: the flex-wrap property</li>
+							<li>Flex Direction and Wrap: the flex-flow shorthand</li>
+							<li>Display Order: the order property</li>
+							<ul>
+								<li>Reordering and Accessibility</li>
+							</ul>
+						</ul>
+					</li>
+					<li class="item">
+						<h2>6. Flex Line</h2>
+						<ul style="padding:20px">
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<h2>7. Flexibility</h2>
+						<ul style="padding:20px">
+							
+							<li>The flex Shorthand</li>
+							<li>Basic Values of flex</li>
+							<li>Components of Flexibility</li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<h2>8. Alignment</h2>
+						<ul style="padding:20px">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<h2>9. Flex Layout Algorithm</h2>
+						<ul style="padding:20px">
+							<li>9.1 Initial Setup</li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<h2>10. Fragmenting Flex Layout</h2>
+						<ul style="padding:20px">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<button onclick="plusSlides(1)">&#10095;</button>
+		</div>
+		<div class="coding">
+			<textarea class="csscoding" id="inputTextToSave">
+
+		.container {
+		  display: flex;
+		}
+
+		.box {
+		  height:100px;
+		  width:100px;
+		}
+
+		.box1 {
+		  background-color: red;
+		}
+
+		.box2 {
+		  background-color: yellow;
+		}
+
+		.box3 {
+		  background-color: green;  
+		}
+
+		.box4 {
+		  background-color: violet;
+		  
+		}
+
+			</textarea>
+			<button onclick="run()" class="runbutton">&#10095;</button>
+			<div class="htmldisplay">
+				<div class="container">
+					<div class = "box box1">
+						box1
+					</div>
+
+					<div class = "box box2">
+						box2
+					</div>
+
+					<div class = "box box3">
+						box3
+					</div>
+
+					<div class = "box box4">
+						box4
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="simple.js"></script>
+</body>
+</html>
