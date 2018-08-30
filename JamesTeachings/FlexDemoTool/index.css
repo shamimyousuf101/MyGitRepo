@@ -1,0 +1,9 @@
+html{
+	background-color: pink;
+}
+
+.inline-flex-container {
+	display: inline-flex;
+	flex-flow:column;
+	/*place-content:space-;*/
+}
