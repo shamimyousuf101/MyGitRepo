@@ -79,6 +79,7 @@ button{
 
 .item{
   display: flex;
+  flex-direction:column;
   width: 100%;
   height: 600px;
   font-size: 25px;

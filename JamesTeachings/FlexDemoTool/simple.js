@@ -35,3 +35,13 @@ function run() {
   sheet.innerHTML = a;
   document.body.appendChild(sheet);
 }
+
+function makeUL(array) {
+  const ul = document.querySelector('.items');
+  document.querySelector('ul');
+  let innerHtml = '';
+  for(let i = 0; i < textData.length; i++ ) {
+    innerHtml += `<li class="item">${textData[i]}</li>`;
+  }
+  ul.innerHTML = innerHtml;
+}
