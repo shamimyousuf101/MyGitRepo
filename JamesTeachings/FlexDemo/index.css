@@ -1,0 +1,79 @@
+/*Example 1*/
+
+.form-row{
+padding:10px 0;
+display:flex;
+}
+
+.form-row label{
+padding-right:10px;
+}
+
+.form-row input{
+flex:1;  
+}
+
+
+
+
+/*Example 2*/
+
+
+
+.column-layout{
+	max-width:1300px;
+background-color:#FFF;
+margin: 40px atuo 0 auto;
+line-height:1.65;
+padding:20px 50px;
+
+display:flex;
+
+}
+
+.main-column{
+flex:2
+order:2
+}
+
+.sidebar-one {
+flex:1
+order:1 - if want it to come first
+}
+
+.sidebar-two {
+flex:1
+order:3
+}
+
+
+/*Example 3*/
+
+
+.call-outs-container {
+	max-width:1400px;
+margin: 40px auto 0 auto;
+display:flex;
+align-items: flex-start: childs using natural height;
+align-items: flex-end;
+align-items: center;
+align-items: stretch - by default equal height columns
+}
+
+.call-out {
+padding:20px;
+margin-bottom:20px;
+flex:1 - for equal width, equal height from flex container, which is difficult in float.
+
+margin-right:40px;  - gives right after final column
+
+}
+
+.call-out :last-child {
+margin-right:0;
+}  for fixing issue
+
+
+.call-out:nth-child(1){background-color:#c0dbe2;}
+.call-out:nth-child(2){background-color:#cdf1c3;}
+.call-out:nth-child(3){background-color:#ccb9da;}
