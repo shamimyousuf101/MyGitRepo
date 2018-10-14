@@ -49,10 +49,31 @@ body{
 }
 
 
-  .paused{
+.paused{
     animation-play-state:paused;
 }
 
+a, button{
+    color: hotpink;
+    right:30;
+    top:20;
+    position: absolute;
+    font-size: 20;
+    cursor: pointer;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    border: none;
+    left:30;
+    width: 200px;
+    height: 30px;
+}
+
+a{
+  display: none;
+}
 
 
 
