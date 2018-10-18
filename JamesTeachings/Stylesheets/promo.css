@@ -1,0 +1,76 @@
+
+.parent-container{
+	display: flex;
+	flex-direction:column;
+	background-color: green;
+	height: 100vh;
+}
+
+header{
+	background-color: yellow;
+	display: flex;
+}
+
+
+.editor-container{
+	display:flex;
+
+	background-color: red;
+	flex-grow:1;
+}
+
+
+/*--------*/
+
+.title-container{
+	background-color: limegreen;
+}
+
+.button-container{
+	background-color: blue;
+	width: 288px;
+	display: flex;
+	justify-content:space-around;
+}
+
+
+/*----------*/
+
+.pallete{
+	background-color: orange;
+	width:300px;
+}
+
+.flow-editor{
+	background-color: pink;
+	flex-grow:1;
+}
+
+.property-editor{
+	background-color: blueviolet;
+}
+
+/*---------*/
+button {
+	height:40px;
+	width:120px;
+	font-family: "Raleway", "helvetica-neue", helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: .07em;
+	background-color: #678dce;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 3px 3px 12px 1px rgba(71, 54, 52, 0.2);
+	border: 1px solid #516ea0;
+	transition-property: background-color, box-shadow;
+	transition-duration: .3s;
+}
+
+button:hover{
+	background-color:#72a1f2 ;
+	box-shadow:3px 3px 12px 1px rgba(71, 54, 52, .4);
+}
+
+
