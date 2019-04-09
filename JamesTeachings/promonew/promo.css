@@ -1,0 +1,124 @@
+body {
+    height: 100%;
+    background-color:silver;
+     margin:0;
+}
+
+.promotion-editor{
+  background-color:purple;
+  height:100%;
+}
+
+/* =============================== */
+
+.title-bar{
+  max-height:200px;
+  background-color:grey;
+  display:flex;
+  align-content:center;
+  flex-wrap:wrap;
+}
+
+.title-editbox{
+  display:flex;
+}
+
+.editable-title {
+  background-color:green;
+  flex:1;
+  flex-basis:content;
+  min-width:300px;
+}
+
+h1{
+    background-color:yellow;
+  display:inline-flex;
+  width:100%;
+  font-size:36px;
+  
+}
+
+input {
+  font-size:36px;
+    background-color:red;
+  width:100%;
+}
+
+/* ================================== */
+.title-bar-buttons{
+  width:260px;
+  background-color:blue;
+  display:flex;
+  position:relative;
+  justify-content:space-between;
+  padding:20px
+  
+}
+
+button {
+  width:120px;
+  display:flex;
+  justify-content:center;
+  align-self:center;
+  font-size:36px;
+}
+
+/* =========================================== */
+.main-content{
+  background-color:orange;
+  display:flex;
+  height:100%;
+}
+
+.palette{
+  background-color:limegreen;
+  height:100%;
+  width:200px;
+}
+
+.flow-editor{
+  display:flex;
+  background-color:pink;
+  flex:1;
+  height:100%;
+}
+
+/* ====================== */
+.property-overlay{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: green;
+    transition: 600ms width, 0s background ;
+}
+
+.property-editor{
+  height:100%;
+}
+
+
+.close-button{
+  cursor:pointer;
+  border-radius:4px;
+  background-color:red;
+  height:25px;
+  width:25px;
+}
+
+.step-box {
+  cursor:pointer;
+  height:100px;
+  width:100px;
+}
+
+.yellow{
+  background:yellow;
+}
+.blueviolet{
+  background:blueviolet;
+}
+
+.expand {
+    width: 120px;
+}
